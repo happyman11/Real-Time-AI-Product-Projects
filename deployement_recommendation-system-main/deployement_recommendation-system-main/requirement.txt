@@ -1,0 +1,7 @@
+python-dotenv==0.19.2
+sklearn==0.0
+numpy
+requests
+joblib
+nltk
+urllib3

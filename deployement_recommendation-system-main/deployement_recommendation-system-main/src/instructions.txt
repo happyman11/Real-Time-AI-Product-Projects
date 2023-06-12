@@ -1,0 +1,190 @@
+
+Link to download glove6B word to vector: https://nlp.stanford.edu/data/glove.6B.zip
+
+
+File preprocessing.py
+
+    Class sanitisationtext
+
+          Summary : This class will preprocess the text and return the preprocessed text
+       
+               Constructor : The __init__ function has some well defined parameters asnd variables which can be used in the function.
+                    
+                    Variables :
+                    
+                              1. self.regular_punct : list of punctuations
+                                                        
+                                                    Description: This list contains all the punctuations which are present in the english language.
+                            
+                              2. self.extra_punct : list of extra punctuations
+                                                     
+                                                    Description: This list contains all the punctuations which are not present in the english language.
+                                                    
+                              3. self.all_punct : list of all punctuations
+                              
+                                                    Description: This list contains all the punctuations i.e self.regular_punct and self.extra_punct combined.
+                                                    
+                              4. self.stop_words : list of stop words
+                               
+                                                    Description : This list contains all the stop words which are present in the english language from nltk library.
+                                                    
+                              5. self.file_path_embedding : string
+                                
+                                                   Description : This string contains the path of the file which contains the embedding of the words from glove vector.
+                    
+                    
+                    Functions :                               
+                                                   
+                               
+                               1. remove_punctuation : 
+                               
+                                                    Description : This function will remove all the punctuations from the text.        
+                                                    
+                                                    Parameters :
+                                                    
+                                                                Input : self and text to be preprocessed.
+                                                                
+                                                                Output : List of words after removing punctuations.
+                                                                
+                               2. tokenise_Sentence : 
+                               
+                                                    Description : This function will tokenise the sentences.        
+                                                    
+                                                    Parameters :
+                                                    
+                                                                Input : self and text to be tokenised (output of the remove_punctuation).
+                                                                
+                                                                Output : List of words after tokenising the sentences.
+                                                                
+                                                                
+                               3. remove_spaces : 
+                               
+                                                Description : This function will remove the empty spaces(output from the stopwords functions).        
+                                                    
+                                                Parameters :
+                                                    
+                                                            Input : self and text .
+                                                                
+                                                            Output : List of words after removing spaces.
+                                                                
+                                    
+                               4. remove_stop_words :
+                               
+                                                    Description : This function will remove the stopwords from the text (output from the tokenised functions).        
+                                                    
+                                                    Parameters :
+                                                    
+                                                                Input : self and text .
+                                                                
+                                                                Output : List of words after removing stopwords.
+                                                          
+                                                                
+                               5. load_embedding : 
+                               
+                                                 Description : This function will load the word to embedding and will use during implementation of the word embedding function.        
+                                                    
+                                                 Parameters :
+                                                    
+                                                            Input : self.
+                                                                
+                                                            Output : Dictionary of word embeddings.
+                                                            
+                                                            
+                               6. word_embedding : 
+                               
+                                                 Description : This function will load the word to embedding  from loaded embedding dictionary and returns the word embedding.        
+                                                    
+                                                 Parameters :
+                                                    
+                                                            Input : self and text(output of the remove spaces function) and embeding  .
+                                                                
+                                                            Output : List of word to vector.
+                                                            
+                                                            
+                               7. pad_sequence : 
+                               
+                                                Description : This function will add padding to the word to vector ( output of the word embedding function).        
+                                                    
+                                                Parameters :
+                                                    
+                                                            Input : self and text (output of the remove spaces function) and size default is set to 10.
+                                                                
+                                                            Output : List of  word embedded function.
+                                                                    
+File model.py
+
+    Class Mode  
+
+            
+       Summary : This class will inherit the preprocessing class and will be used to load the model and make predictions as well as map the predictions to the categories.
+       
+       
+       
+       Constructor : The __init__ function has some well defined parameters asnd variables which can be used in the function.
+                    
+                    Variables :
+                    
+                              1. self.model_path : string
+                                                        
+                                                    Description: This is the path of the clustering model saved trainning and optimisation.
+                            
+                              2. self.model : K means model
+                                                     
+                                                    Description: This is the model which will be used to make prediction.
+                                                    
+                              3. self.file_path : Path of the file where the cluster has veen added after prerdiction from the model.
+                              
+                                                    Description: This file is used to to mapped the prediction from out courses.
+                                                    
+                              
+                    
+                    Functions :                               
+                                                   
+                               
+                               1. prediction : 
+                               
+                                                    Description : This function will make prediction by using preprocessed text and loaded model.        
+                                                    
+                                                    Parameters :
+                                                    
+                                                                Input : self and text on which prediction can be made.
+                                                                
+                                                                Output : Cluster - the course belongs to.
+                                                                
+                               2. select_dataset : 
+                               
+                                                    Description : This function will take prediction from the model and select the courses from the same cluster and return it . 
+                                                    
+                                                    Parameters :
+                                                    
+                                                                Input : self and prediction from the model.
+                                                                
+                                                                Output : The list of recommended course.
+                                                                
+                                                                
+                               3. pre_process_pipeline_prediction : 
+                               
+                                                Description : This function will remove the empty spaces(output from the stopwords functions).        
+                                                    
+                                                Parameters :
+                                                    
+                                                            Input : self and text .
+                                                                
+                                                            Output : List of words after removing spaces.
+                                                            
+                               4. pre_process_pipeline_prediction :
+                                
+                                                Description : This function is like a pipeline for preprocessing the text. This calls the other functions from its class and preprocessing class.
+                                                
+                                                Parameters : 
+                                                
+                                                             Input : self and text.
+                                                             
+                                                             Output: Recommended courses.
+                                                             
+                                                             I 
+                                                                
+                                    
+                               
+                                                                    
+    
