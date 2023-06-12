@@ -1,0 +1,49 @@
+
+18-Feb-22 13:04:07 - root - CRITICAL - Login Failed: Wrong Password!!Entered
+18-Feb-22 13:06:01 - root - CRITICAL - Connection Failed: Incorrect Smtp librarty or  or Port
+18-Feb-22 13:06:08 - root - CRITICAL - Connection Failed: Incorrect Smtp librarty or  or Port
+18-Feb-22 13:06:10 - root - CRITICAL - Connection Failed: Incorrect Smtp librarty or  or Port
+18-Feb-22 13:06:11 - root - CRITICAL - Connection Failed: Incorrect Smtp librarty or  or Port
+18-Feb-22 13:06:52 - root - CRITICAL - Connection Failed: Incorrect Smtp librarty orPort
+18-Feb-22 13:06:57 - root - CRITICAL - Connection Failed: Incorrect Smtp librarty orPort
+18-Feb-22 13:15:16 - root - CRITICAL - Connected to the smtp server
+18-Feb-22 13:19:22 - root - CRITICAL - Logged in to the smtp server with gmail
+18-Feb-22 13:27:03 - root - CRITICAL - MAil sent successfully
+18-Feb-22 13:29:10 - root - CRITICAL - Email-Dishpatcher-class : Mail sent successfully
+18-Feb-22 13:34:17 - root - CRITICAL - SMS-Dishpatcher-class : message sent successfully, id:SM3f165e05877a451fb0d5795ab177bfe6
+18-Feb-22 13:36:00 - root - CRITICAL - SMS-Dishpatcher-class : message sent successfully, id:SM1c96e16501034ea690bb5edb9e8e2322
+18-Feb-22 13:43:09 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_Fast2SMS : Exception occured
+18-Feb-22 13:43:10 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_twillio: message sent successfully, id:SM1319c542bcae45858b70f03616393461
+18-Feb-22 13:45:05 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_twillio: message sent successfully, id:SM2572d7c9a6294c1689f8c2b036a763b3
+18-Feb-22 13:45:58 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_Fast2SMS : Exception occured
+18-Feb-22 13:45:59 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_twillio: message sent successfully, id:SM9700ba81d69a49e7bdb4ee398c333074
+18-Feb-22 13:50:29 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_Fast2SMS :['SMS sent successfully.'] id:ah1nv2uxroiezdq
+18-Feb-22 13:50:30 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_twillio: message sent successfully, id:SM8e73d89965364362802d81e7e867350d
+18-Feb-22 13:52:06 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_Fast2SMS :['SMS sent successfully.'] id:vzw1jmh5qfdk2x7
+18-Feb-22 13:52:08 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_twillio: message sent successfully, id:SM384bf9ca53e943909b4758e30cd206fb
+18-Feb-22 13:54:31 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_Fast2SMS :['SMS sent successfully.'] id:srwijkha4pf2m3c
+18-Feb-22 13:54:32 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_twillio: message sent successfully, id:SM95c525e814bc49458ce7074cb337aa60
+18-Feb-22 13:54:35 - root - CRITICAL - Email-Dishpatcher-class >> Function - Send email : Mail sent successfully
+18-Feb-22 14:01:21 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_Fast2SMS :['SMS sent successfully.'] id:lbupvxoq3ch207j number :8676853586
+18-Feb-22 14:01:22 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_twillio: message sent successfully, id:SM33c3c30b7ca649a4834d27f1b4b7ec31 number :+91918676853586
+18-Feb-22 14:01:25 - root - CRITICAL - Email-Dishpatcher-class >> Function - Send email : Mail sent successfully Email :tiwari11.rst@gmail.com
+18-Feb-22 14:04:32 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_Fast2SMS :['SMS sent successfully.'] id:pxidvy8u7n0hfca number :8676853586
+18-Feb-22 14:04:33 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_twillio: message sent successfully, id:SMbf65caf8af9e483eaaa7d0a19c3252e3 number :+91918676853586
+18-Feb-22 14:04:36 - root - CRITICAL - Email-Dishpatcher-class >> Function - Send email : Mail sent successfully Email :tiwari11.rst@gmail.com Contact_type : plain
+18-Feb-22 14:10:06 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_Fast2SMS :['SMS sent successfully.'] id:5y0lexoascvkdwb number :8676853586
+18-Feb-22 14:10:08 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_twillio: message sent successfully, id:SMdc73d743cc18400c89905a4a8a12bfb8 number :+91918676853586
+18-Feb-22 14:10:10 - root - CRITICAL - Email-Dishpatcher-class >> Function - Send email : Mail sent successfully Email :tiwari11.rst@gmail.com Contact_type : plain
+18-Feb-22 14:11:39 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_Fast2SMS :['SMS sent successfully.'] id:uyadxh4fzn752vg number :8676853586
+18-Feb-22 14:11:40 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_twillio: message sent successfully, id:SMb8968e3633cb4510bf9c4f02d1ccafa8 number :+91918676853586
+18-Feb-22 14:11:43 - root - CRITICAL - Email-Dishpatcher-class >> Function - Send email : Mail sent successfully Email :tiwari11.rst@gmail.com Contact_type : plain
+18-Feb-22 14:13:19 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_Fast2SMS :['SMS sent successfully.'] id:a84cnv3gpj0mfor number :8676853586
+18-Feb-22 14:13:20 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_twillio: message sent successfully, id:SMd24ef2a6e06f4c37b4c38d97af130194 number :+91918676853586
+18-Feb-22 14:13:23 - root - CRITICAL - Email-Dishpatcher-class >> Function - Send email : Mail sent successfully Email :tiwari11.rst@gmail.com Contact_type : plain
+18-Feb-22 14:44:00 - root - WARNING - test1
+18-Feb-22 14:44:00 - root - CRITICAL - test2
+18-Feb-22 14:54:18 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_Fast2SMS :['SMS sent successfully.'] id:c7qk8di5apz2o4x number :8676853586
+18-Feb-22 14:54:19 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_twillio: message sent successfully, id:SM539ef405e55148c782812e357fefaa91 number :+91918676853586
+18-Feb-22 14:54:22 - root - CRITICAL - Email-Dishpatcher-class >> Function - Send email : Mail sent successfully Email :tiwari11.rst@gmail.com Contact_type : plain
+18-Feb-22 15:17:08 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_Fast2SMS :['SMS sent successfully.'] id:tx1rngs79a2yvwm number :8676853586
+18-Feb-22 15:17:10 - root - CRITICAL - SMS-Dishpatcher-class >> Function - send_sms_twillio: message sent successfully, id:SM3e4cadbca1634465869663f51bcfcaab number :+91918676853586
+18-Feb-22 15:17:13 - root - CRITICAL - Email-Dishpatcher-class >> Function - Send email : Mail sent successfully Email :tiwari11.rst@gmail.com Contact_type : plain
