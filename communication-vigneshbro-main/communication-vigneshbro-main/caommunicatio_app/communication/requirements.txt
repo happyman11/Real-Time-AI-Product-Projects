@@ -548,7 +548,7 @@ spyder-kernels @ file:///tmp/build/80754af9/spyder-kernels_1614030590686/work
 SQLAlchemy==1.4.9
 SQLAlchemy-JSONField==1.0.0
 SQLAlchemy-Utils==0.38.2
-sqlparse==0.4.2
+sqlparse==0.4.4
 srsly==2.4.2
 starlette==0.16.0
 statsmodels @ file:///tmp/build/80754af9/statsmodels_1614023746358/work
