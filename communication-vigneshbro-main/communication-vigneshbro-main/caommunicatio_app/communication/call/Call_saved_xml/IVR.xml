@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+
+
+<TwillioIVR>
+
+
+    <MainList>
+            Please select from the below options 
+            Press 1 for Fees Related   
+            Press 2 for Program Related
+            Press 3 for Data Correction
+            Press 4 for LMS Related
+            Press 9 for Speak to Person
+            
+    </MainList>
+
+    <feerelated>
+            Please select from the below options 
+            Press 1 for Amount Mismatch   
+            Press 2 for Refund Request           
+    </feerelated>
+
+
+    <ProgramRelated>
+           Please select from the below options 
+           Press 1 for Change of Elective 
+           Press 2 for Change of Program
+           Press 3 for Change of Batch 
+    </ProgramRelated>
+
+
+    <DataCorrection>
+            Please select from the below options 
+            Press 1 for Name Correction
+            Press 2 for Email Correction
+            Press 3 for Parent Name Correction
+            Press 4 for Date of Birth Correction
+            Press 5 for Mobile Number Correction
+    </DataCorrection>
+
+    <LMSRelated>
+            Please select from the below options 
+            Press 1 for Login Issue
+    </LMSRelated>
+
+    <Speakperson>
+            Please select from the below options 
+            Press 1 For Recorded Instruction to use Josh
+            Press 2 Collect Info
+            Press 3 Connect to SPOC
+    </Speakperson>
+
+
+    <Sucess>
+            Your inquiry has been register sucessfully, our agent will call you soon. 
+   </Sucess>
+
+
+
+   <Failure>
+            Your inquiry has not been register. Please Go to this site. 
+   </Failure>
+  
+   <NoResponse>
+            Oops!! No Input is detected. Press 0 to go in main menu.
+   </NoResponse>
+
+   <Invalidinput>
+            Oops!! Invalid Input Detected. Press 0 to go in main menu. 
+   </Invalidinput>
+
+   <mainmenu>
+           Press 0 for main menu
+   </mainmenu>
+
+   <ReconnectAgain>
+     Please call again.
+   </ReconnectAgain>
+   <Bye>Thanks for Contacting Jain IVR Support.</Bye>
+
+
+
+
+</TwillioIVR>    

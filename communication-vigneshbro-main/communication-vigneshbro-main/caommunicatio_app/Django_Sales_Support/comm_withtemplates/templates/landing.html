@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container bg-white">
+        <div class="row bg-pink mt-5">
+            <h2 class="text-center">Temporaray UI </h2>
+
+        </div>
+        <div class="row  justify-content-center mt-5">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card ">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="card-title">Mobile SMS</h5>
+                                    <p class="card-text">Click to send Mobile SMS
+                                    </p>
+
+                                    <a data-bs-toggle="modal" data-bs-target="#smsModal" class="btn btn-primary">SMS
+                                        Form </a>
+
+                                </div>
+                                <div class="col-4">
+
+                                    <div class="row">
+
+                                        <img class="shadow img-fluid img-thumbnail rounded mx-auto d-block"
+                                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.kMJw-ARtlrDk4D9RjVdG7AHaEK%26pid%3DApi&f=1">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card ">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="card-title">Watsapp SMS</h5>
+                                    <p class="card-text">Click to send Watsapp SMs
+                                    </p>
+
+                                    <a data-bs-toggle="modal" data-bs-target="#whatsappsmsModal"
+                                        class="btn btn-primary">Whatsapp SMS Form </a>
+
+                                </div>
+                                <div class="col-4">
+
+                                    <div class="row">
+
+                                        <img class="shadow img-fluid img-thumbnail rounded mx-auto d-block"
+                                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HQ7303vLM79wTZ4I9q6UBwHaFj%26pid%3DApi&f=1">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card ">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="card-title">Email</h5>
+                                    <p class="card-text">Click to send Email
+                                    </p>
+
+                                    <a data-bs-toggle="modal" data-bs-target="#emailModal" class="btn btn-primary">Email
+                                        Form </a>
+
+                                </div>
+                                <div class="col-4">
+
+                                    <div class="row">
+
+                                        <img class="shadow img-fluid img-thumbnail rounded mx-auto d-block"
+                                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.LJQeBeM6RweMN6cOF8JPhAHaFk%26pid%3DApi&f=1">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Button trigger modal -->
+
+    <!-- Modal Email -->
+
+
+    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" id="emailform">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="email" class="form-control" id="recipient_name2" name="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Subject:</label>
+                            <textarea class="form-control" id="Subject" name="Subject"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message_text2" name="message-text"></textarea>
+                        </div>
+
+                </div>
+                <div class="modal-footer">
+                    <p id="show_input2"></p>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" onclick="sendemail()" class="btn btn-primary">Send Email</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal SMS -->
+
+
+    <div class="modal fade" id="smsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+
+                        <form id="smsform">
+                            <div class="form-row d-flex justify-content-between">
+                                <div class="col-5">
+
+                                    <input type="text" class="form-control" id="country_code"
+                                        placeholder="Country Code:">
+                                </div>
+                                <div class="col-5">
+                                    <input type="text" class="form-control" id="recipient_name"
+                                        placeholder="Recipient Number:">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message_text"></textarea>
+                            </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <p id="show_input"></p>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" onclick="sendsms()" class="btn btn-primary">Send message</button>
+                    </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Whatsapp SMS -->
+
+
+    <div class="modal fade" id="whatsappsmsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+                        <form id="watsappsmsform">
+                            <div class="form-row d-flex justify-content-between">
+                                <div class="col-5">
+
+                                    <input type="text" class="form-control" id="country_code1"
+                                        placeholder="Country Code:">
+                                </div>
+                                <div class="col-5">
+                                    <input type="text" class="form-control" id="recipient_name1"
+                                        placeholder="Recipient Number:">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message_text1"></textarea>
+                            </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <p id="show_input1"></p>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" onclick="sendwatsappsms()" class="btn btn-primary">Send message</button>
+                    </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+    <script>
+        function sendsms() {
+            let country_code = document.getElementById("country_code")
+            let recipient_name = document.getElementById("recipient_name")
+            let message_text = document.getElementById("message_text")
+            let show_input=document.getElementById("show_input")
+            let smsform=document.getElementById("smsform")
+           
+            var data = {
+                "Countrycode": country_code.value,
+                "Number": recipient_name.value,
+                "Content": message_text.value,
+                csrfmiddlewaretoken: '{{ csrf_token }}',
+                'Access-Control-Allow-Origin': '*',
+            }
+           
+            
+            axios.post(`http://127.0.0.1:8051/communicate/sms/`, data)
+                .then(response => { 
+                    console.log(response.data.status) 
+                    if (response.data.status==200){
+                        smsform.reset()
+                        document.getElementById("show_input").style.color = "green";
+                        show_input.innerText =response.data.response
+
+                    }
+                    else
+                    {
+
+                        document.getElementById("show_input").style.color = "red";
+                        show_input.innerText =response.data.response
+                    }
+                    
+                }
+                
+            )
+        }
+
+
+
+
+
+
+        function sendwatsappsms() {
+            let country_code = document.getElementById("country_code1")
+            let recipient_name = document.getElementById("recipient_name1")
+            let message_text = document.getElementById("message_text1")
+            let show_input=document.getElementById("show_input1")
+            let watsappsmsform=document.getElementById("watsappsmsform")
+            
+            var data = {
+                "Countrycode": country_code.value,
+                "Number": recipient_name.value,
+                "Content": message_text.value,
+                csrfmiddlewaretoken: '{{ csrf_token }}',
+                'Access-Control-Allow-Origin': '*',
+            }
+           
+            
+            axios.post(`http://127.0.0.1:8051/communicate/watsappmsg/`, data)
+                .then(response => { 
+                    console.log(response.data.status) 
+                    if (response.data.status==200){
+                        watsappsmsform.reset()
+                        document.getElementById("show_input1").style.color = "green";
+                        show_input.innerText =response.data.response     
+                    }
+                    else
+                    {
+
+                        document.getElementById("show_input1").style.color = "red";
+                        show_input.innerText =response.data.response
+                    }
+                    
+                }
+                
+            )
+        }
+
+
+
+        function sendemail() {
+            let recipient_name2 = document.getElementById("recipient_name2")
+            let Subject = document.getElementById("Subject")
+            let message_text = document.getElementById("message_text2")
+            let show_input=document.getElementById("show_input2")
+            let emailform=document.getElementById("emailform")
+            
+            var data = {
+                "reciepient": recipient_name2.value,
+                "subject": Subject.value,
+                "Content": message_text.value,
+                csrfmiddlewaretoken: '{{ csrf_token }}',
+                'Access-Control-Allow-Origin': '*',
+            }
+           console.log(data)
+            
+            axios.post(`http://127.0.0.1:8051/communicate/email/`, data)
+                .then(response => { 
+                    console.log(response.data.status) 
+                    if (response.data.status==200){
+                        watsappsmsform.reset()
+                        document.getElementById("show_input2").style.color = "green";
+                        show_input.innerText =response.data.response     
+                    }
+                    else
+                    {
+
+                        document.getElementById("show_input2").style.color = "red";
+                        show_input.innerText =response.data.response
+                    }
+                    
+                }
+                
+            )
+        }
+    </script>
+
+
+</body>
+
+</html>
