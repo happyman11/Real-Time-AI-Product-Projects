@@ -258,7 +258,7 @@ jeepney @ file:///tmp/build/80754af9/jeepney_1606148855031/work
 jieba==0.42.1
 Jinja2==2.11.3
 jmespath==1.0.0
-joblib==1.1.0
+joblib==1.1.1
 json5==0.9.5
 jsonpatch==1.32
 jsonpickle==2.0.0
