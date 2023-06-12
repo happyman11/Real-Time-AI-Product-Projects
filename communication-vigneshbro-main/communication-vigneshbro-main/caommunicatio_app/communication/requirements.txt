@@ -143,7 +143,7 @@ django-ipware==4.0.2
 django-nested-admin==3.4.0
 django-rest-knox==4.1.0
 django-rest-passwordreset==1.2.1
-django-ses==3.0.1
+django-ses==3.5.0
 django-test-without-migrations==0.6
 django-timezone-field==5.0
 django-user-accounts==3.2.0
