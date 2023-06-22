@@ -180,7 +180,7 @@ filelock==3.6.0
 fire==0.4.0
 flake8 @ file:///tmp/build/80754af9/flake8_1615834841867/work
 Flask @ file:///home/ktietz/src/ci/flask_1611932660458/work
-Flask-AppBuilder==3.4.5
+Flask-AppBuilder==4.3.2
 Flask-Babel==2.0.0
 Flask-Caching==1.10.1
 Flask-JWT-Extended==3.25.1
