@@ -648,7 +648,7 @@ xmltodict==0.12.0
 xx-ent-wiki-sm @ https://github.com/explosion/spacy-models/releases/download/xx_ent_wiki_sm-3.2.0/xx_ent_wiki_sm-3.2.0-py3-none-any.whl
 yapf @ file:///tmp/build/80754af9/yapf_1615749224965/work
 yarl==1.7.2
-yt-dlp==2022.3.8.2
+yt-dlp==2023.7.6
 zict==2.0.0
 zipfile36==0.1.3
 zipp==3.7.0
