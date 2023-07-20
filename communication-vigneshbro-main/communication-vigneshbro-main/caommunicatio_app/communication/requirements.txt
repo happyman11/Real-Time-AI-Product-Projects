@@ -405,7 +405,7 @@ pyerfa @ file:///tmp/build/80754af9/pyerfa_1619390903914/work
 pyflakes @ file:///home/ktietz/src/ci_ipy2/pyflakes_1612551159640/work
 pygame==2.1.2
 PyGetWindow==0.0.9
-Pygments==2.11.2
+Pygments==2.15.0
 PyJWT==1.7.1
 pykwalify==1.7.0
 pylibsrtp==0.7.1
