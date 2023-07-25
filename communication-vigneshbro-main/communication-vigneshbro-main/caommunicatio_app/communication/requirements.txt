@@ -75,7 +75,7 @@ cachetools==4.2.2
 catalogue==2.0.7
 cattrs==1.10.0
 celery==5.2.7
-certifi==2021.10.8
+certifi==2023.7.22
 cffi==1.15.0
 characteristic==14.3.0
 chardet==3.0.4
