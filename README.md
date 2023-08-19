@@ -17,7 +17,21 @@
   </a>
 
    <a href="https://twitter.com/tiwari11rst">
-    <img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="website Badge"/>
+    <img src="https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white" alt="
+GitPages Badge"/>
+  </a>
+
+  </div>
+
+  <div id="Blog">
+    
+   <a href="https://twitter.com/tiwari11rst">
+    <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium Badge"/>
+  </a>
+
+   <a href="https://twitter.com/tiwari11rst">
+    <img src="https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white" alt="
+Blogger Badge"/>
   </a>
 
   </div>
