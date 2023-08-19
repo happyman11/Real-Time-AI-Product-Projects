@@ -20,7 +20,7 @@
  <div id="badges">
     
   <a href="https://www.linkedin.com/in/ravishekhartiwari">
-    <img src="https://img.shields.io/twitter/follow/your_twitter_handle?style=social" alt="LinkedIn Badge"/>
+   <i class="fa fa-twitter" aria-hidden="true"></i>
   </a>
   <a href="https://twitter.com/tiwari11rst">
     <img src="https://img.shields.io/twitter/follow/your_twitter_handle?style=social" alt="Twitter Badge"/>
