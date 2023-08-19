@@ -11,7 +11,14 @@
   <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
 
   <div id="Websites">
-   
+    
+   <a href="https://twitter.com/tiwari11rst">
+    <img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="website Badge"/>
+  </a>
+
+   <a href="https://twitter.com/tiwari11rst">
+    <img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="website Badge"/>
+  </a>
 
   </div>
 
