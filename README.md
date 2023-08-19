@@ -11,9 +11,7 @@
   <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
 
   <div id="Websites">
-    <a href="https:www.rstiwari.com">
-    <img alt="Website" src="https://img.shields.io/website" alt="Website" />
-  </a>
+   
 
   </div>
 
