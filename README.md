@@ -21,7 +21,7 @@
    <i class="fa fa-twitter" aria-hidden="true"></i>
   </a>
   <a href="https://twitter.com/tiwari11rst">
-    <img src="https://img.shields.io/twitter/follow/your_twitter_handle?style=social" alt="Twitter Badge"/>
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
   </a>
   <a href="https://twitter.com/tiwari11rst">
     <img src="https://img.shields.io/facebook/follow/your_facebook_page?style=social" alt="Facebook Badge"/>
